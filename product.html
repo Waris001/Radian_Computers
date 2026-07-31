@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar sticky-top">
+
+    <div class="container">
+
+        <!-- Logo -->
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+
+            <img src="assets/images/logo.png" alt="Logo" class="logo">
+
+            <div class="brand-text">
+                <h4>Radian Computers</h4>
+                <small>Sales | Service | Solutions</small>
+            </div>
+
+        </a>
+
+        <!-- Mobile Toggle -->
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Menu -->
+
+        <div class="collapse navbar-collapse justify-content-end"
+            id="navbarMenu">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                        href="#"
+                        data-bs-toggle="dropdown">
+
+                        Products
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
+                        <li><a class="dropdown-item" href="desktops.html">Desktop PCs</a></li>
+                        <li><a class="dropdown-item" href="printers.html">Printers</a></li>
+                        <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="onlinepurchase.html">Online Purchase</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Dummy Content -->
+<!-- <div style="height:800px;background:#f5f5f5;"></div> -->
+
+<!-- ================= PRODUCT HERO ================= -->
+
+<section class="product-hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h1>Our Products</h1>
+
+                <p>
+                    Discover premium laptops, desktops, printers,
+                    accessories and IT solutions from trusted brands.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6 text-lg-end">
+
+                <nav>
+
+                    <ol class="breadcrumb justify-content-lg-end">
+
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li class="breadcrumb-item active">
+                            Products
+                        </li>
+
+                    </ol>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FILTER BAR ================= -->
+
+<section class="product-filter">
+
+    <div class="container">
+
+        <div class="row g-3 align-items-center">
+
+            <!-- Search -->
+
+            <div class="col-lg-4">
+
+                <div class="search-box">
+
+                    <i class="fas fa-search"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Search laptops, printers..."
+                        id="searchInput">
+
+                </div>
+
+            </div>
+
+
+            <!-- Categories -->
+
+            <div class="col-lg-3">
+
+                <select class="form-select" id="categoryFilter">
+
+                <option value="all">All Categories</option>
+
+                <option value="Laptop">Laptop</option>
+
+                <option value="Printer">Printer</option>
+
+                <option value="Accessories">Accessories</option>
+
+                <option value="Desktop">Desktop</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Sort -->
+
+            <div class="col-lg-3">
+
+                <select class="form-select" id="sortProducts">
+
+                    <option value="">Sort By</option>
+
+                    <option value="az">Name (A-Z)</option>
+
+                    <option value="za">Name (Z-A)</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- View -->
+
+            <div class="col-lg-2">
+
+                <div class="view-btns">
+
+                    <button id="gridView" class="active">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+
+                    <button id="listView">
+                        <i class="fas fa-list"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="text-center mt-5 d-none" id="noProduct">
+
+    <h3>No Products Found</h3>
+
+    <p>Try searching with another keyword.</p>
+
+</div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products py-5">
+
+    <div class="container">
+
+        <div class="row g-4" id="productContainer">
+
+            <!-- Product -->
+
+            <div class="col-lg-4 col-md-6 product-item"
+                data-name="Dell Inspiron 15"
+                data-brand="Dell"
+                data-category="Laptop">
+
+                <div class="product-card">
+
+                    <span class="product-badge">New</span>
+
+                    <div class="product-image">
+
+                        <img src="images/products/dell-inspiron.png"
+                            alt="Dell Laptop">
+
+                    </div>
+
+                    <div class="product-body">
+
+                        <span class="product-brand">
+                            Dell
+                        </span>
+
+                        <h4 class="product-title">
+                            Dell Inspiron 15
+                        </h4>
+
+                        <p class="product-category">
+                            Laptop
+                        </p>
+
+                        <p class="product-description">
+
+                            Intel Core i5 • 16GB RAM • 512GB SSD
+                            • Windows 11
+
+                        </p>
+
+                        <a href="#" class="btn-details">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="col-lg-4 col-md-6 product-item"
+                data-name="HP Pavilion"
+                data-brand="HP"
+                data-category="Laptop">
+
+                <div class="product-card">
+
+                    <span class="product-badge best">
+                        Best Seller
+                    </span>
+
+                    <div class="product-image">
+
+                        <img src="images/products/hp-pavilion.png"
+                            alt="HP">
+
+                    </div>
+
+                    <div class="product-body">
+
+                        <span class="product-brand">
+                            HP
+                        </span>
+
+                        <h4 class="product-title">
+                            HP Pavilion
+                        </h4>
+
+                        <p class="product-category">
+                            Laptop
+                        </p>
+
+                        <p class="product-description">
+
+                            AMD Ryzen 7 • 16GB RAM • 1TB SSD
+
+                        </p>
+
+                        <a href="#" class="btn-details">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="col-lg-4 col-md-6 product-item"
+                data-name="Canon Pixma G3010"
+                data-brand="Canon"
+                data-category="Printer">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/canon-g3010.png"
+                            alt="Canon Printer">
+
+                    </div>
+
+                    <div class="product-body">
+
+                        <span class="product-brand">
+                            Canon
+                        </span>
+
+                        <h4 class="product-title">
+                            Pixma G3010
+                        </h4>
+
+                        <p class="product-category">
+                            Printer
+                        </p>
+
+                        <p class="product-description">
+
+                            Wireless All-in-One Ink Tank Printer
+
+                        </p>
+
+                        <a href="#" class="btn-details">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="col-lg-4 col-md-6 product-item"
+                data-name="Lenovo ThinkPad E14"
+                data-brand="Lenovo"
+                data-category="Laptop">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/thinkpad.png"
+                            alt="ThinkPad">
+
+                    </div>
+
+                    <div class="product-body">
+
+                        <span class="product-brand">
+                            Lenovo
+                        </span>
+
+                        <h4 class="product-title">
+                            ThinkPad E14
+                        </h4>
+
+                        <p class="product-category">
+                            Laptop
+                        </p>
+
+                        <p class="product-description">
+
+                            Intel Core i7 • Business Series
+
+                        </p>
+
+                        <a href="#" class="btn-details">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="col-lg-4 col-md-6 product-item"
+                data-name="Logitech MK270"
+                data-brand="Logitech"
+                data-category="Accessories">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/logitech.png"
+                            alt="Keyboard">
+
+                    </div>
+
+                    <div class="product-body">
+
+                        <span class="product-brand">
+                            Logitech
+                        </span>
+
+                        <h4 class="product-title">
+                            MK270 Wireless Combo
+                        </h4>
+
+                        <p class="product-category">
+                            Accessories
+                        </p>
+
+                        <p class="product-description">
+
+                            Wireless Keyboard & Mouse Combo
+
+                        </p>
+
+                        <a href="#" class="btn-details">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="col-lg-4 col-md-6 product-item"
+                data-name="Epson L3250"
+                data-brand="Epson"
+                data-category="Printer">
+
+                <div class="product-card">
+
+                    <span class="product-badge">
+                        New
+                    </span>
+
+                    <div class="product-image">
+
+                        <img src="images/products/epson.png"
+                            alt="Printer">
+
+                    </div>
+
+                    <div class="product-body">
+
+                        <span class="product-brand">
+                            Epson
+                        </span>
+
+                        <h4 class="product-title">
+                            Epson EcoTank L3250
+                        </h4>
+
+                        <p class="product-category">
+                            Printer
+                        </p>
+
+                        <p class="product-description">
+
+                            WiFi Colour Ink Tank Printer
+
+                        </p>
+
+                        <a href="#" class="btn-details">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================== TRUSTED BRANDS =================== -->
+
+<section class="brands-section">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>OUR BRANDS</span>
+
+            <h2>Authorized & Trusted Brands</h2>
+
+            <p>
+                We deal with the world's leading computer and
+                technology brands.
+            </p>
+
+        </div>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="brand-box">
+                    <img src="images/brands/dell.png" alt="Dell">
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="brand-box">
+                    <img src="images/brands/hp.png" alt="HP">
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="brand-box">
+                    <img src="images/brands/lenovo.png" alt="Lenovo">
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="brand-box">
+                    <img src="images/brands/asus.png" alt="Asus">
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="brand-box">
+                    <img src="images/brands/canon.png" alt="Canon">
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="brand-box">
+                    <img src="images/brands/epson.png" alt="Epson">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================== CATEGORIES =================== -->
+
+<section class="categories-section">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>WHAT WE OFFER</span>
+
+            <h2>Explore Categories</h2>
+
+        </div>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="category-box">
+
+                    <i class="fas fa-laptop"></i>
+
+                    <h5>Laptops</h5>
+
+                    <p>Dell, HP, Lenovo, Asus & more.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="category-box">
+
+                    <i class="fas fa-desktop"></i>
+
+                    <h5>Desktop PCs</h5>
+
+                    <p>Business & Gaming Computers.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="category-box">
+
+                    <i class="fas fa-print"></i>
+
+                    <h5>Printers</h5>
+
+                    <p>Inkjet, Laser & Multifunction.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="category-box">
+
+                    <i class="fas fa-keyboard"></i>
+
+                    <h5>Accessories</h5>
+
+                    <p>Keyboard, Mouse, UPS & More.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="images/shop.jpg"
+                     class="img-fluid rounded-4 shadow"
+                     alt="Shop">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="mini-title">
+                    WHY RADIAN COMPUTERS
+                </span>
+
+                <h2>
+                    Your Trusted Technology Partner
+                </h2>
+
+                <p>
+
+                    We provide genuine products,
+                    competitive pricing,
+                    professional guidance,
+                    and reliable after-sales support
+                    to individuals, businesses,
+                    and educational institutions.
+
+                </p>
+
+                <ul class="why-list">
+
+                    <li><i class="fas fa-check-circle"></i> Genuine Products</li>
+
+                    <li><i class="fas fa-check-circle"></i> Latest Models</li>
+
+                    <li><i class="fas fa-check-circle"></i> Expert Technical Support</li>
+
+                    <li><i class="fas fa-check-circle"></i> Affordable Pricing</li>
+
+                    <li><i class="fas fa-check-circle"></i> Warranty Assistance</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <h2>
+                    Need Help Choosing the Right Computer?
+                </h2>
+
+                <p>
+
+                    Our experts are ready to help you find
+                    the perfect laptop, desktop or printer
+                    for your needs.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+
+                <a href="contact.html"
+                   class="cta-btn">
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>Testimonials</span>
+
+            <h2>What Our Customers Say</h2>
+
+        </div>
+
+        <div class="row mt-5">
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card reveal">
+
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p>
+
+                        Purchased my Dell laptop from Radian Computers.
+                        Genuine product, excellent pricing and amazing support.
+
+                    </p>
+
+                    <hr>
+
+                    <h5>Rahul Sharma</h5>
+
+                    <small>Business Owner</small>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card reveal">
+
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p>
+
+                        Very professional staff. They guided me to choose
+                        the perfect printer for my office.
+
+                    </p>
+
+                    <hr>
+
+                    <h5>Neha Verma</h5>
+
+                    <small>Office Administrator</small>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card reveal">
+
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p>
+
+                        Best place for laptops and computer accessories.
+                        Highly recommended.
+
+                    </p>
+
+                    <hr>
+
+                    <h5>Mohit Singh</h5>
+
+                    <small>Student</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq-section">
+
+<div class="container">
+
+<div class="section-title text-center">
+
+<span>FAQ</span>
+
+<h2>Frequently Asked Questions</h2>
+
+</div>
+
+<div class="accordion mt-5" id="faq">
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#one">
+
+Do you sell genuine products?
+
+</button>
+
+</h2>
+
+<div id="one"
+
+class="accordion-collapse collapse show"
+
+data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+Yes. We deal only in genuine branded products with manufacturer warranty.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#two">
+
+Do you provide installation?
+
+</button>
+
+</h2>
+
+<div id="two"
+
+class="accordion-collapse collapse"
+
+data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+Yes. Installation and setup services are available.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#three">
+
+Do you provide warranty support?
+
+</button>
+
+</h2>
+
+<div id="three"
+
+class="accordion-collapse collapse"
+
+data-bs-parent="#faq">
+
+<div class="accordion-body">
+
+Absolutely. We assist customers with warranty claims and service support.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONTACT BANNER ================= -->
+
+<section class="contact-banner">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-8">
+
+<h2>
+
+Looking for the Perfect Computer?
+
+</h2>
+
+<p>
+
+Call us today or chat on WhatsApp.
+Our experts are always ready to help.
+
+</p>
+
+</div>
+
+<div class="col-lg-4 text-lg-end">
+
+<a href="tel:+919999999999"
+
+class="call-btn">
+
+<i class="fas fa-phone"></i>
+
+Call Now
+
+</a>
+
+<a href="https://wa.me/919999999999"
+
+class="whatsapp-btn">
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==================== HIGHLIGHTS ==================== -->
+
+<section class="highlights">
+    <div class="container">
+        <div class="row g-0">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="highlight-item">
+                    <i class="fas fa-truck-fast"></i>
+                    <div>
+                        <h6>Free Delivery</h6>
+                        <small>Across Uttar Pradesh</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="highlight-item">
+                    <i class="fas fa-wallet"></i>
+                    <div>
+                        <h6>Finance Available</h6>
+                        <small>Easy EMI Options</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="highlight-item">
+                    <i class="fas fa-laptop"></i>
+                    <div>
+                        <h6>Exchange Offer</h6>
+                        <small>Best Price for Old Laptop</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="highlight-item border-0">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h6>Expert Support</h6>
+                        <small>Service You Can Trust</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6">
+
+                <h2 class="footer-logo">Radian Computers</h2>
+
+                <p class="footer-address">
+                    Quadirabad Road Domariaganj <br>
+                    S.Nagar
+                </p>
+
+                <p>
+                    <strong>Phone:</strong> 99181 15893
+                </p>
+
+                <p>
+                    <strong>Email:</strong> info@example.com
+                </p>
+
+            </div>
+
+
+            <!-- Useful Links -->
+            <div class="col-lg-4 col-md-6">
+
+                <h4 class="footer-title">Useful Links</h4>
+
+                <ul class="footer-links">
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="col-lg-4 col-md-12">
+
+                <h4 class="footer-title">Our Services</h4>
+
+                <ul class="footer-links">
+
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <!-- Bottom Footer -->
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start">
+
+                    <p class="mb-1">
+                        © 2026 <strong>Radian Computers.</strong> All Rights Reserved
+                    </p>
+
+                    <small>
+                        Designed by
+                        <a href="https://www.nexatechit.com/">NexaTech IT</a>
+                    </small>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="social-icons">
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- Back To Top -->
+
+<a href="#" id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- https://www.merajdistributors.com/index.html -->
