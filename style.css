@@ -393,9 +393,13 @@ transform:translateX(-50%);
 
 .contact-section{
 
-    background:#f5f7fb;
-    padding:100px 0;
-
+    /* background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("assets/images/contactBG.jpg");
+    background-size: cover;
+    background-position: center; */
+    background-color: #f5f7fb;
+    background-repeat: no-repeat;
 }
 
 /*=========================
@@ -436,7 +440,7 @@ transform:translateX(-50%);
     max-width:700px;
     margin:auto;
 
-    color:#777;
+    color:#000000;
 
     line-height:1.9;
     font-size:17px;
@@ -721,7 +725,7 @@ textarea.form-control{
 .about-section{
 
     background:#f5f7fb;
-    padding:100px 0;
+    padding:30px 0;
 
 }
 
@@ -1309,7 +1313,7 @@ textarea.form-control{
 
     background:#f5f7fb;
 
-    padding:100px 0;
+    padding:30px 0;
 
 }
 
@@ -2941,5 +2945,75 @@ color:#fff;
 transform:translateY(-5px);
 
 box-shadow:0 12px 25px rgba(0,0,0,.2);
+
+}
+
+/*================ MODAL =================*/
+
+.modal-content{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.modal-header{
+
+    background:#2f2f2f;
+
+    color:#fff;
+
+    border:none;
+
+}
+
+.modal-title{
+
+    font-weight:700;
+
+}
+
+.modal-body{
+
+    padding:30px;
+
+    line-height:1.9;
+
+}
+
+.modal-body h5{
+
+    color:#f5a000;
+
+    margin-top:20px;
+
+    font-weight:700;
+
+}
+
+.modal-body p{
+
+    color:#555;
+
+    text-align:justify;
+
+}
+
+.modal-footer{
+
+    border:none;
+
+    padding:20px 30px;
+
+}
+
+.modal-footer .btn{
+
+    border-radius:30px;
+
+    padding:10px 30px;
 
 }
