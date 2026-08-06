@@ -1883,7 +1883,8 @@ textarea.form-control{
     padding:25px;
 
     transition:.4s;
-
+     height:220px;        /* Same height for all images */
+    object-fit:contain;  /* Keeps the full image visible */
 }
 
 .product-card:hover img{
